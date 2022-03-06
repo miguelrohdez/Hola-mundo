@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+    <nav>
+        <img src="./img/LogoPasteleria.png" alt="logo pasteleria" width="130px">
+        <h1>Pasteleria Las delicias</h1>
+        <h4>No la mejor del mundo pero si la mejor del rumbo</h2>
+        <a href="./Pasteleria.html"> Inicio</a>
+        <a href="./pedidos.html"> Pedidos</a>
+        <a href="./pastelero.html"> Pastelero</a>
+    </nav>
+    <hr>
+    <section>
+
+        <form action="pedido.js">
+            <label for="nombre">Nombre de Cliente: </label>
+            <input type="text" placeholder="Nombre Completo" name="nombre">
+    
+            <br><br>
+    
+            <label for="telefono">Telefono: </label>
+            <input type="tel" placeholder="Telefono" name="telefono">
+    
+            <br><br>
+    
+            <label for="email">E-mail: </label>
+            <input type="email" placeholder="E-mail" name="email">
+    
+            <br><br>
+    
+            <p>Selecciona los sabores del pastel (Hasta 3 sabores)</p>
+            <label for="sabor1">Escoge el sabor:</label>
+            <select name="sabor1" id="sabor1">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Tres leches">Tres leches</option>
+                <option value="Vainialla">Vainialla</option>
+                <option value="Nutella">Nutella</option>
+                <option value="Amareto">Amareto</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Guayaba">Guayaba</option>
+            </select>
+            <br>
+            <label for="sabor2">Escoge el sabor 2:</label>
+            <select name="sabor2" id="sabor2">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Tres leches">Tres leches</option>
+                <option value="Vainialla">Vainialla</option>
+                <option value="Nutella">Nutella</option>
+                <option value="Amareto">Amareto</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Guayaba">Guayaba</option>
+                <option value="soloUno">Un solo sabor</option>
+            </select>
+            <br>
+            <label for="sabor3">Escoge el sabor extra:</label>
+            <select name="sabor3" id="sabor3">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Tres leches">Tres leches</option>
+                <option value="Vainialla">Vainialla</option>
+                <option value="Nutella">Nutella</option>
+                <option value="Amareto">Amareto</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Guayaba">Guayaba</option>
+                <option value="sinExtra">Ninguno</option>
+            </select>
+            <p>Selecciona los adornos del pastel</p>
+            <li>Vela personaje   ...  $50</li>
+            <br><br>
+            <input type="checkbox" name="velas10" id="velas10">
+            <label for="velas10">Velas (10)</label>
+            <input type="number" name="velas10Cuantos" id="velas10Cuantos" placeholder="Cuantos paquetes?"><br>
+            
+            <input type="checkbox" name="velas30" id="velas30">
+            <label for="velas30">Velas (30)</label>
+            <input type="number" name="velas30Cuantos" id="velas30Cuantos" placeholder="Cuantos paquetes?"><br>
+
+            <input type="checkbox" name="velasSonido" id="velasSonido">
+            <label for="velasSonido">Velas con sonido</label>
+            <input type="number" name="velasSonido" id="velasSonido" placeholder="Cuantas?"><br>
+
+            <input type="checkbox" name="velasPersonaje" id="velasPersonaje">
+            <label for="velasPersonaje">Velas del personaje</label>
+            <select name="velaPersonajeVal" id="velaPersonajeVal">
+                <option value="shrek">Shrek</option>
+                <option value="harry-potter">Harry Potter</option>
+                <option value="bart">Bart</option>
+                <option value="homero">Homero</option>
+                <option value="barnie">Barnie</option>
+                <option value="numero">Numero</option>
+                <option value="munieca">Muñeca</option>
+                <option value="aleatorioNinio">Cualquiera para niño</option>
+                <option value="aleatorioNinia">Cualquiera para niña</option>
+                <option value="aleatorioAdulto">Cualquiera para adulto</option>
+            </select><br>
+
+            <input type="checkbox" name="imagenPastel" id="imagenPastel">
+            <label for="imagenPastel">Imagen en el pastel</label>
+            <input type="file" name="imagenPastelFile" id="imagenPastelFile" placeholder="Archivo imagen"><br>
+
+            <input type="checkbox" name="msgPastel" id="msgPastel">
+            <label for="msgPastel">Texto en el pastel</label>
+            <input type="text" name="msgPasteltxt" id="msgPasteltxt" placeholder="Texto se le podra">
+            
+            <br><br>
+            
+            <input type="reset" name="btn-reset" id="btn-reset" value="Limpiar pedido">
+            <input type="submit" name="btn-enviar" id="btn-enviar" value="Finalizar pedido" >
+    
+            <br><br><br>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <span>------------ Magdalena Contreras, Ciudad de México ------------ </span>
+        <span>5537216205 ------------</span>
+        <span>Lunes a Sabado 7:00 a 21:00, Domigo 10:00 a 16:00 ------------</span>
+    </footer>
+</body>
+</html>
