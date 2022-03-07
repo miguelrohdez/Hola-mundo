@@ -1,9 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 footer {
     background-color: #eef3ff;
 }
 
 button{
     background-color: #f1f5ff;
+}
+
+button:hover{
+    background-color: #2848c6;
 }
 
 button-dark {
@@ -14,6 +24,22 @@ nav {
     background-color: #e7f4fc;
 }
 
-text-dark {
+.text-dark {
     color: #1f3e72;
+}
+
+.text-normal{
+    color: #63728b;
+}
+
+.text-logo{
+    color: #3858d6;
+}
+
+.text-preparations{
+    color: #254376;
+}
+
+.text-why{
+    color: #203f73;
 }
