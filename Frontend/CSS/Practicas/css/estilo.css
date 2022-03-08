@@ -19,7 +19,42 @@ nav{
 
 footer {
     background-color: #eef3ff;
+    display: flexbox;
+    padding: 50px 10px 80px 10px;
+}
+
+.logo-footer{
+    background-color: #94a77e;
+    display: inline-flex;
+    width: 180px;
+    padding-left:80px ;
+    padding-right:180px ;
+}
+
+.footer-col{
+    background-color: #cf6596;
+    display: inline-flex;
+    color: #63728b;
     
+    border-style:solid ;
+    padding: 0px 10em 0px 25em;
+}
+
+.text-logo-footer{
+    color: #3858d6;
+    display: contents;
+}
+
+.terminos{
+    display: block;
+    border-style: dotted;
+    color: #63728b;
+}
+
+.text-title-footer{
+    color: #203f73;
+    font-size: 1.0em;
+    font-weight: bold;
 }
 
 button{
@@ -95,14 +130,3 @@ a:hover {
     height: 70px;
 }
 
-.terminos{
-    display: block;
-    border-style: dotted;
-    
-}
-
-.pr{
-    display: inline-table;
-    
-
-}
