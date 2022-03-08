@@ -62,6 +62,13 @@ a:hover {
 
 .page1{
     display: inline-block;
+    border-style: dotted;
+}
+
+.page1 .icon{
+    display: inline-block;
+    border-style: dotted;
+    width: 20px;
 }
 
 .text-dark {
@@ -90,8 +97,12 @@ a:hover {
 
 .terminos{
     display: block;
+    border-style: dotted;
+    
 }
 
 .pr{
     display: inline-table;
+    
+
 }
