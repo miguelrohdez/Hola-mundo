@@ -55,6 +55,7 @@ a:hover {
 
 .page1{
     align-items: flex-start;
+    margin-bottom: -7%;
 }
 
 .fightV{
@@ -178,6 +179,16 @@ a:hover {
     background-color: #6376c2;
 }
 
+.logo-vacum{
+    height: 70px;
+    margin-right: 3% ;
+}
+
+.vacunas-bar{
+    padding-left: 5%;
+    margin-bottom: 10%;
+}
+
 .text-dark {
     color: #1f3e72;
 }
@@ -198,9 +209,6 @@ a:hover {
     color: #203f73;
 }
 
-.logo-vacum{
-    height: 70px;
-}
 
 footer {
     background-color: #eef3ff;
