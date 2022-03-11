@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.page1{
+    border-style: dotted;
+    background-color: #cf6596;
+    width: 100%;
+}
+
+.pag1-texto{
+    border-style: double;
+    background-color: aqua;
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+.pag1-img{
+    display: inline-block;
+    border-style: solid;
+    background-color: blueviolet;
+    width: 48%;
+}
+
+h1{
+   background-color: aliceblue;
+}
+
+.t{
+    color: #1f3e72;
+    font-size: 3.4rem;
+    padding: 0px 20% 0 20%;
+    background-color: aliceblue;
+}
+
+
+
+
+
