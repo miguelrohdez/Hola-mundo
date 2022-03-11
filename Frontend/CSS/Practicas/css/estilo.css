@@ -189,6 +189,93 @@ a:hover {
     margin-bottom: 10%;
 }
 
+.pag2{
+    padding: 0px 10% 0px;
+}
+
+.pag2 h2{
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 3%;
+}
+
+
+.pag2-info{
+    color: #63728b;
+    width: 48%;
+    font-size: 1.3em;
+    margin-bottom: 10%;
+    
+}
+
+.pag2-datos{
+    width: 19%;
+    display: inline-block;
+    margin-right: 5% ;
+    vertical-align: top;
+}
+
+
+.icon-pag2{
+    width: 55px;
+    margin-bottom: 3%;
+}
+
+.text-why{
+    color: #203f73;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 2%;
+    margin-bottom: 10%;
+}
+
+
+.pag3-img{
+    width: 40%;
+}
+
+.pag3-info{
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    
+}
+.pag3-info h2{
+    padding-top: 20%;
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 7%;
+    padding-left: 8%;
+}
+
+.pag3-info-text{
+    color: #63728b;
+    font-size: 1.3em;
+    margin-bottom: 10%;
+    padding-left: 8%;
+    width: 90%;
+    
+}
+
+.icon-pag3{
+    width: 30px;
+}
+
+.pag3-datos{
+    margin-bottom: 8% ;
+    padding-left: 15%;
+}
+
+.text-preparations{
+    color: #254376;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    margin-left: 3%;
+}
+
 .text-dark {
     color: #1f3e72;
 }
@@ -201,13 +288,7 @@ a:hover {
     color: #3858d6;
 }
 
-.text-preparations{
-    color: #254376;
-}
 
-.text-why{
-    color: #203f73;
-}
 
 
 footer {
