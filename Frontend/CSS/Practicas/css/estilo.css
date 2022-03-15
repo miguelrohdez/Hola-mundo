@@ -276,6 +276,95 @@ a:hover {
     margin-left: 3%;
 }
 
+.pag4{
+}
+
+.pag4-title{
+    width: 30%;
+    padding-top: 10%;
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 3%;
+    padding-left: 8%;
+}
+
+.pag4 p{
+    color: #63728b;
+    font-size: 1.3em;
+    margin-bottom: 8%;
+    padding-left: 8%;
+    width: 42%;
+}
+
+.pag4-info{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-Doc{
+    width: 45%;
+    position: relative;
+    top: -400px;
+}
+
+.pag4-datos{
+    border-style: solid;
+    border-color: #fafaff;
+    border-radius: 5px;
+    width: 40%;
+    display: inline-block;
+    margin: auto;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.pag4-datos-title{
+    color: #203f73;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 8%;
+}
+.pag4-datos-text{
+    color: #63728b;
+    font-weight: bold;
+    font-size: .9em; 
+    display: block;
+    margin-left: 40%;
+    position: relative;
+    top: -20px;
+    
+}
+
+.icon-pag4{
+    width: 20%;
+    margin-left: 10%;
+}
+
+.pag4-datos button{
+    background-color: #f1f5ff;
+    color: #2b4bc9;
+    font-size: 1.3em;
+    border-style: none;
+    height: 60px;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.pag4-datos button:hover{
+    background-color: #2848c6;
+    color: #ffffff;
+}
+
+
 .text-dark {
     color: #1f3e72;
 }
@@ -293,40 +382,67 @@ a:hover {
 
 footer {
     background-color: #eef3ff;
-    display: flexbox;
-    padding: 50px 10px 80px 10px;
+    height: 20em;
 }
 
 .logo-footer{
-    background-color: #94a77e;
-    display: inline-flex;
-    width: 180px;
-    padding-left:80px ;
-    padding-right:180px ;
-}
-
-.footer-col{
-    background-color: #cf6596;
-    display: inline-flex;
-    color: #63728b;
-    
-    border-style:solid ;
-    padding: 0px 10em 0px 25em;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .text-logo-footer{
-    color: #3858d6;
-    display: contents;
+    color: #2949c7;
+    padding-left: 15%;
+    padding-top: 8%;
+    font-size: 2.0em;
+}
+
+.logo-footer p{
+    width: 25%;
+    color: #63728b;
+    padding-left: 15% ;
+    padding-top: 3%;
+    line-height: 1.5em;
+}
+
+.footer-datos{
+    color: #63728b;
+    display: inline-block;
+    width: 50%;
+}
+
+.footer-datos-items{
+    color: #63728b;
+    display: inline-block;
+    padding-top: 8%;
+    margin-left: 12%;
+}
+
+.footer-datos-items li{
+    padding-bottom: 20%;
+}
+
+.derechos{
+    color: #63728b;
+    width: 40%;
+    display: inline-block;
+    padding-top: 4%;
+    padding-left: 7%;
 }
 
 .terminos{
-    display: block;
-    border-style: dotted;
     color: #63728b;
+    width: 30%;
+    display: inline-block;
+    padding-left: 20%;
 }
 
+.terminos span{
+    margin-right: 10%;
+}
 .text-title-footer{
     color: #203f73;
-    font-size: 1.0em;
+    font-size: 1.1em;
     font-weight: bold;
 }
