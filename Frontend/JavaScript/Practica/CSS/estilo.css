@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.pokedex-bkg{
+    display: flex;
+    margin-left: 5px;
+}
+
+.poke-left-bkg{
+    width: 40%;
+}
+
+.poke-mid-bkg{
+    width: 5%;
+}
+
+.poke-right-bkg{
+    width: 40%;
+}
