@@ -7,17 +7,19 @@
 
 .pokedex-bkg{
     display: flex;
-    margin-left: 5px;
+}
+
+.pokeleft-cont{
+    border-style: solid;
 }
 
 .poke-left-bkg{
-    width: 40%;
+    width: 50%;
+    margin-left: 10%;
 }
 
-.poke-mid-bkg{
-    width: 5%;
-}
+
 
 .poke-right-bkg{
-    width: 40%;
+    width: 100%;
 }
