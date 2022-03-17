@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.pokedex-bkg{
+    display: flex;
+}
+
+.pokeleft-cont{
+    border-style: solid;
+}
+
+.poke-left-bkg{
+    width: 50%;
+    margin-left: 10%;
+}
+
+
+
+.poke-right-bkg{
+    width: 100%;
+}
