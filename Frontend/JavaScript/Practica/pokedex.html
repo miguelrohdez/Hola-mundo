@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex -¿Quién es este pokemon?</title>
-    <link rel="js/text" href="./JS/funciones.js">
     <link rel="stylesheet" href="./CSS/estilo.css">
 </head>
 <body>
     <div class="pokedex-bkg">
         <div class="pokeleft-cont">
-            <img class="poke-left-bkg" src="./IMG/pokedex-left.png" alt="fondo-pokedex-izq">
-            <img src="./IMG/pokedex-inicio.png" alt="Imagen Pokemon" class="pokemo-img">
+            <img id="pokemon-img" src="./IMG/pokedex-inicio.png" alt="Imagen Pokemon" >
+            <h3 id="pokemon-name">Buscando...</h3>
         </div>
         <div class="pokeright-cont">
-            <img class="poke-right-bkg" src="./IMG/pokedex-right.png" alt="fondo-pokedex-der">
+            <h4 id="pokemon-tipo">Tipo</h4>
+            <h4 id="pokemon-stats">Estadisticas</h4>
+            <h4 id="pokemon-moves">Golpes</h4>
 
         </div>
-   
     </div>
+    <input type="text" placeholder="Nombre de pokemon" id="pokemon-findName" name="pokeName">
+    <button onclick="buscarPokemon()">Buscar Pokemon</button>
 </body>
+<footer>
+    <script src="./JS/funciones.js"></script>
+</footer>
 </html>
