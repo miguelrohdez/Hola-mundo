@@ -3,10 +3,19 @@ var lang = 'es';
 const buscarPokemon = () => {
     const url = "https://pokeapi.co/api/v2/pokemon/torchic";
     fetch(url).then((res) =>{
-        return res.json();
+        if (res.status != "200") {
+            //pokeImage("./pokemon-sad.gif")
+        }
+        else {
+            return res.json();
+        }
     }).then((data) => {
-        const movimi = 
-        console.log(data)
+        console.log(data);
+        console.log(data.types[0].type.name);
+        let tipo = data.types[0].type.name;
+        console.log(tipo);
+        console.log(getNameTipo(tipo));
+        
         const pokeDatos = {
             img: data.sprites.other['official-artwork'].front_default,
             tipo: getNameTipo(data.types[0].type.name),
@@ -18,32 +27,37 @@ const buscarPokemon = () => {
                 defensaEspecial: data.stats[4].base_stat,
                 velocidad: data.stats[5].base_stat
             },
-
-
-
-
+        
+        
+        
+        
         };
+        
         console.log(pokeDatos);
+        //const pokeMoves = data.moves.map(x => getNameMove(x.move.name));
         
-        const pokeMoves = data.moves.map(x => getNameMove(x.move.name));
-        
-        console.log(pokeMoves);
         
 
     });
 
 }
 
+
+
 function getNameMove(name){
+    let moves = [];
     fetch(`https://pokeapi.co/api/v2/move/${name}`)
     .then((res) => res.json())
-    .then((data) => console.log(data.names[5].name))
+    .then((dataMove) => moves.push(dataMove.names[5].name));
+    console.log(moves);
 }
 
 function getNameTipo(tipo){
+    let tipoNombre;
     fetch(`https://pokeapi.co/api/v2/type/${tipo}`)
     .then((res) => res.json())
-    .then((data) => console.log(data.names[5].name))
+    .then((dataType) => tipoNombre = dataType.names[5].name)
+    return tipoNombre;
 }
 
 buscarPokemon();
