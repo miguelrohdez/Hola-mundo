@@ -12,7 +12,7 @@ const buscarPokemon = () => {
         }
     }).then((data) => {
         if (data) {
-            console.log(data)
+            console.log(data);
             
             const pokeDatos = {
                 nombre: data.name, 
@@ -25,61 +25,33 @@ const buscarPokemon = () => {
                     ataqueEspecial: data.stats[3].base_stat,
                     defensaEspecial: data.stats[4].base_stat,
                     velocidad: data.stats[5].base_stat
-                },
+                }
                 
             }
-            let pokeImg = data.types[0].type.name
-            console.log(pokeDatos)
-            pokeNombre(pokeDatos.name)
-            pokeImagen(pokeDatos.img)
-            pokeTipo(pokeDatos)
+            ponerDatos(pokeDatos);
         }
-    })
+    });
 }
 
-
-const pokeNombre = (u) => {
-    const pokeName = document.getElementById("pokemon-name");
-    pokeName.innerText = u;
-    console.log(pokeName)
-}
-
-const pokeImagen = (url) => {
+const ponerDatos = (pokeDatos) => {
+    console.log(pokeDatos);
     const pokePhoto = document.getElementById("pokemon-img");
-    pokePhoto.src = url;
+    const pokeName = document.getElementById("pokemon-name");
+    const pokeType = document.getElementById("pokemon-type");
+    const pokeStatHP = document.getElementById("stat-hp");
+    const pokeStatAT = document.getElementById("stat-at");
+    const pokeStatDF = document.getElementById("stat-df");
+    const pokeStatSP = document.getElementById("stat-sp");
+    const pokeStatATSP = document.getElementById("stat-atsp");
+    const pokeStatDFSP = document.getElementById("stat-defsp");
+
+    pokeName.innerText = pokeDatos.nombre;
+    pokePhoto.src = pokeDatos.img;
+    pokeType.innerText = pokeDatos.tipo;
+    pokeStatHP.innerText = pokeDatos.estadisticas.hp;
+    pokeStatAT.innerText = pokeDatos.estadisticas.ataque;
+    pokeStatDF.innerText = pokeDatos.estadisticas.defensa;
+    pokeStatSP.innerText = pokeDatos.estadisticas.velocidad;
+    pokeStatATSP.innerText = pokeDatos.estadisticas.ataqueEspecial;
+    pokeStatDFSP.innerText = pokeDatos.estadisticas.defensaEspecial;
 }
-
-
-const pokeTipo = (url) => {
-    const pokeType = document.getElementById("pokemon-tipo");
-    pokeType.src = url;
-}
-
-
-const pokeEstadisticas = (url) => {
-    const pokeStats = document.getElementById("pokemon-stats");
-    pokeStats.src = url;
-}
-
-const pokeMovimientos = (url) => {
-    const pokeMoves = document.getElementById("pokemon-moves");
-    pokeMoves.src = url;
-}
-
-function getNameTipo(tipo){
-    fetch(`https://pokeapi.co/api/v2/type/${tipo}`)
-    .then((res) => res.json())
-    .then(dataType =>{
-        salida = dataType.names[5].name;
-    }); 
-        
-}
-
-
-function getNameMove(name){
-    let moves = [];
-    fetch(`https://pokeapi.co/api/v2/move/${name}`)
-    .then((res) => res.json())
-    .then(dataMove => moves.push(dataMove.names[5].name));
-    console.log(moves);
-}    
