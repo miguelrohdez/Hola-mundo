@@ -9,27 +9,21 @@
 </head>
 <body>
     <div class="pokedex-bkg">
-        <div class="pokeleft-cont">
             <img id="pokemon-img" src="./IMG/pokedex-inicio.png" alt="Imagen Pokemon" >
             <h3 id="pokemon-name">Buscando...</h3>
-        </div>
-        <div class="pokeright-cont">
-            <h4 id="pokemon-type-title">Tipo</h4>
-            <h4 id="pokemon-type">Tipo</h4><br>
-            <h4 id="pokemon-stats">Estadisticas</h4><br>
-            <span>HP: </span> <span id="stat-hp">00</span><br>
-            <span>Ataque: </span> <span id="stat-at">00</span><br>
-            <span>Defensa: </span> <span id="stat-df">00</span><br>
-            <span>Velocidad: </span> <span id="stat-sp">00</span><br>
-            <span>Ataque Especial: </span> <span id="stat-atsp">00</span><br>
-            <span>Defensa Especial: </span> <span id="stat-defsp">00</span><br>
-
+            <h4 id="pokemon-type">Tipo</h4>
+            <div class="pokemon-stats">
+                <span>HP: </span> <span id="stat-hp">00</span>
+                <span>Ataque: </span> <span id="stat-at">00</span>
+                <span>Defensa: </span> <span id="stat-df">00</span>
+                <span>Velocidad: </span> <span id="stat-sp">00</span>
+                <span>Ataque Especial: </span> <span id="stat-atsp">00</span>
+                <span>Defensa Especial: </span> <span id="stat-defsp">00</span>
+            </div>
             <h4 id="pokemon-moves">Golpes</h4><br>
-
-        </div>
     </div>
     <input type="text" placeholder="Nombre de pokemon" id="pokemon-findName" name="pokeName">
-    <button onclick="buscarPokemon()">Buscar Pokemon</button>
+    <button id="btn-findName" onclick="buscarPokemon()">Buscar</button>
 </body>
 <footer>
     <script src="./JS/funciones.js"></script>

@@ -2,44 +2,57 @@
     padding: 0px;
     margin: 0px;
 }
-
-
-
-.pokedex-bkg{
-    display: flex;
+body{
+    background-image: url(/Frontend/JavaScript/Practica/IMG/pokedex-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.pokeleft-cont{
-    border-style: solid;
-}
-
-.poke-left-bkg{
-    width: 50%;
-    margin-left: 10%;
-}
-
-
-
-.poke-right-bkg{
+.pokedex{
     width: 100%;
 }
 
-#pokemon-img{
 
+
+#pokemon-img{
+    
+    border-style: solid;
 }
 
 #pokemon-name{
-
+    
+    width: 15%;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
 }
 
-#pokemon-tipo{
-
+#pokemon-type{
+   
+    border-style: double;
+    width: 15%;
+    text-align: center;
+    font-size: 1.5em;
+    
+    text-transform: capitalize;
 }
 
-#pokemon-stats{
+#pokemon-findName{
+   
+}
 
+#btn-findName{
+    width: 5%;
+    height: 6vh;
+    
+}
+
+.pokemon-stats{
+   
 }
 
 #pokemon-moves{
+    display: none;
 
 }
