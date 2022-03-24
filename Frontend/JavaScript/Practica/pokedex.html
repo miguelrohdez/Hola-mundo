@@ -9,21 +9,37 @@
 </head>
 <body>
     <div class="pokedex-bkg">
+        <div class="contenido">
             <img id="pokemon-img" src="./IMG/pokedex-inicio.png" alt="Imagen Pokemon" >
+            <div id="pokemon-moves">
+            </div>   
+            <input type="text" placeholder="Nombre de pokemon" id="pokemon-findName" name="pokeName">
+            <button id="btn-findName" onclick="buscarPokemon()">Buscar</button>
+            <div class="pokemon-stats">
+                <div class="stats-item">
+                    <h4>HP</h4> <p id="stat-hp">00</p>
+                </div>
+                <div class="stats-item">
+                    <h4>Ataque</h4> <p id="stat-at">00</p>
+                </div>
+                <div class="stats-item">
+                    <h4>Defensa</h4> <p id="stat-df">00</p>
+                </div>
+                <div class="stats-item">
+                    <h4>Velocidad</h4> <p id="stat-sp">00</p>
+                </div>
+                <div class="stats-item">
+                    <h4>Ataque Especial</h4> <p id="stat-atsp">00</p>
+                </div>
+                <div class="stats-item">
+                    <h4>Defensa Especial</h4> <p id="stat-defsp">00</p>
+                </div>
+            </div>
             <h3 id="pokemon-name">Buscando...</h3>
             <h4 id="pokemon-type">Tipo</h4>
-            <div class="pokemon-stats">
-                <span>HP: </span> <span id="stat-hp">00</span>
-                <span>Ataque: </span> <span id="stat-at">00</span>
-                <span>Defensa: </span> <span id="stat-df">00</span>
-                <span>Velocidad: </span> <span id="stat-sp">00</span>
-                <span>Ataque Especial: </span> <span id="stat-atsp">00</span>
-                <span>Defensa Especial: </span> <span id="stat-defsp">00</span>
-            </div>
-            <h4 id="pokemon-moves">Golpes</h4><br>
+            
+        </div>
     </div>
-    <input type="text" placeholder="Nombre de pokemon" id="pokemon-findName" name="pokeName">
-    <button id="btn-findName" onclick="buscarPokemon()">Buscar</button>
 </body>
 <footer>
     <script src="./JS/funciones.js"></script>

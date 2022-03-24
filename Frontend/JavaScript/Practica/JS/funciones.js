@@ -25,10 +25,12 @@ const buscarPokemon = () => {
                     ataqueEspecial: data.stats[3].base_stat,
                     defensaEspecial: data.stats[4].base_stat,
                     velocidad: data.stats[5].base_stat
-                }
-                
+                },
+                movimientos: data.moves.map(x => x.move.name)
             }
             ponerDatos(pokeDatos);
+            //const pokeMoves = data.moves.map(x => x.move.name);
+            //console.log(pokeMoves);
         }
     });
 }
@@ -54,4 +56,14 @@ const ponerDatos = (pokeDatos) => {
     pokeStatSP.innerText = pokeDatos.estadisticas.velocidad;
     pokeStatATSP.innerText = pokeDatos.estadisticas.ataqueEspecial;
     pokeStatDFSP.innerText = pokeDatos.estadisticas.defensaEspecial;
+    ponerMovimientos(pokeDatos.movimientos);
+}
+
+function ponerMovimientos(array){
+    array.forEach(movimiento => {
+        var elemento = document.createElement("p");
+        var contenido = document.createTextNode(movimiento);
+        elemento.appendChild(contenido);
+        document.getElementById("pokemon-moves").appendChild(elemento);
+    });
 }

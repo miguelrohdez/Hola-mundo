@@ -2,57 +2,96 @@
     padding: 0px;
     margin: 0px;
 }
-body{
-    background-image: url(/Frontend/JavaScript/Practica/IMG/pokedex-background.png);
+.pokedex-bkg{
+    background-image: url("../IMG/pokedex-background.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.pokedex{
     width: 100%;
+    height: 95vh;
 }
 
-
+.contenido{
+    width: 100%;
+    height: 100%;
+}
 
 #pokemon-img{
-    
-    border-style: solid;
-}
-
-#pokemon-name{
-    
-    width: 15%;
-    text-align: center;
-    font-size: 1.5em;
-    text-transform: capitalize;
-}
-
-#pokemon-type{
-   
-    border-style: double;
-    width: 15%;
-    text-align: center;
-    font-size: 1.5em;
-    
-    text-transform: capitalize;
-}
-
-#pokemon-findName{
-   
-}
-
-#btn-findName{
-    width: 5%;
-    height: 6vh;
-    
-}
-
-.pokemon-stats{
-   
+    position: absolute;
+    width: 20%;
+    top: 25%;
+    left: 20%;
 }
 
 #pokemon-moves{
-    display: none;
-
+    position: absolute;
+    width: 30%;
+    height: 30vh;
+    top: 25%;
+    left: 56%;
+    overflow: auto;
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
 }
+
+#pokemon-moves p{
+    text-transform: capitalize;
+    padding: 1%;
+    color: whitesmoke;
+}
+
+#pokemon-name{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    width: 11%;
+    height: 4.5vh;
+    top: 87%;
+    right: 30%;
+}
+
+#pokemon-type{
+    position: absolute;
+    width: 11%;
+    height: 4.5vh;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    top: 87%;
+    right: 15%;
+}
+
+#pokemon-findName{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 83%;
+    left: 25%;
+}
+
+#btn-findName{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    border-radius: 50%;
+    border-style: none;
+    top: 76%;
+    left: 14%;
+    background-color: rgba(17, 101, 185, 0.24);
+}
+
+.pokemon-stats{
+    position: absolute;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    top: 64%;
+    right: 14%;
+}
+
+.stats-item{
+    margin: 2%;
+}
+
