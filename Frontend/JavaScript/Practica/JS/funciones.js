@@ -60,6 +60,7 @@ const ponerDatos = (pokeDatos) => {
 }
 
 function ponerMovimientos(array){
+    document.getElementById("pokemon-moves").innerHTML="";
     array.forEach(movimiento => {
         var elemento = document.createElement("p");
         var contenido = document.createTextNode(movimiento);
