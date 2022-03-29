@@ -18,6 +18,7 @@ const buscarPokemon = () => {
                 nombre: data.name, 
                 img: data.sprites.other['official-artwork'].front_default,
                 tipo: data.types[0].type.name,
+                tipo_url:data.types[0].type.url,
                 estadisticas: {
                     hp: data.stats[0].base_stat,
                     ataque: data.stats[1].base_stat,
@@ -26,11 +27,11 @@ const buscarPokemon = () => {
                     defensaEspecial: data.stats[4].base_stat,
                     velocidad: data.stats[5].base_stat
                 },
-                movimientos: data.moves.map(x => x.move.name)
+                movimientos: data.moves.map(x => x.move.name),
+                movimientos_url: data.moves.map(x => x.move.url)
             }
             ponerDatos(pokeDatos);
-            //const pokeMoves = data.moves.map(x => x.move.name);
-            //console.log(pokeMoves);
+                        
         }
     });
 }
@@ -46,7 +47,7 @@ const ponerDatos = (pokeDatos) => {
     const pokeStatSP = document.getElementById("stat-sp");
     const pokeStatATSP = document.getElementById("stat-atsp");
     const pokeStatDFSP = document.getElementById("stat-defsp");
-
+    
     pokeName.innerText = pokeDatos.nombre;
     pokePhoto.src = pokeDatos.img;
     pokeType.innerText = pokeDatos.tipo;
@@ -57,6 +58,9 @@ const ponerDatos = (pokeDatos) => {
     pokeStatATSP.innerText = pokeDatos.estadisticas.ataqueEspecial;
     pokeStatDFSP.innerText = pokeDatos.estadisticas.defensaEspecial;
     ponerMovimientos(pokeDatos.movimientos);
+
+   // console.log(await getNameTipo(pokeDatos.tipo_url));
+    
 }
 
 function ponerMovimientos(array){
@@ -67,4 +71,25 @@ function ponerMovimientos(array){
         elemento.appendChild(contenido);
         document.getElementById("pokemon-moves").appendChild(elemento);
     });
+}
+
+const getNameTipo = async (url) => {
+    const respuesta = await fetch (url);
+    const json = await respuesta.json();
+    return json.names[5].name;
+    /*
+    fetch(url)
+    .then(res => {
+        return res.json();
+    }).then( (dataType) =>{
+        return dataType.names[5].name;
+    }); */
+}
+
+function getNameMove(name){
+    let moves = [];
+    fetch(`https://pokeapi.co/api/v2/move/${name}`)
+    .then((res) => res.json())
+    .then(dataMove => moves.push(dataMove.names[5].name));
+    console.log(moves);
 }
